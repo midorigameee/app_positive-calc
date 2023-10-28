@@ -8,5 +8,13 @@
     <h1><%= title %></h1>
     <p>Let's enjoy calcuration!!</p>
     <p><%= num1 %> + <%= num2 %> = ?</p>
+    <form action="result" method="POST">
+      <p>Result : 
+        <input type="number" name="result">
+      </p>
+      <input type="hidden" name="num1" value=<%= num1 %>>
+      <input type="hidden" name="num2" value=<%= num2 %>>
+      <input type="submit" vlue="Submit">
+    </form>
   </body>
 </html>

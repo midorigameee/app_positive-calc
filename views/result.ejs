@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+  <% if(judgement) { %>
+    <p>正解！天才かよ！！</p>
+  <% } else { %>
+    <p>小学校からやり直そう…</p>
+  <% } %>
+  <a href="/">やりなおす</a>
+  </body>
+</html>

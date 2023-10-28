@@ -7,9 +7,31 @@ router.get('/', function(req, res, next) {
   var num2 = Math.floor(Math.random() * 100) + 1;
 
   res.render('index', {
-    title: 'Express',
+    title: 'Calcuration',
     num1: num1,
     num2: num2
+  });
+});
+
+router.post('/result', function(req, res, next) {
+  if(req.body.result == undefined){
+    console.log("result undefined");
+    res.redirect("/");
+    return;
+  }
+  
+  var num1 = Number(req.body.num1);
+  var num2 = Number(req.body.num2);
+  var result = Number(req.body.result);
+
+  var judgement = false;
+  if((num1+num2) == result){
+    judgement = true;
+  }
+
+  res.render('result', {
+    title: 'Result',
+    judgement: judgement
   });
 });
 

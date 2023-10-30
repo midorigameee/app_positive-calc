@@ -2,14 +2,21 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/stylesheets/textmoving.css'>
   </head>
   <body>
     <h1><%= title %></h1>
   <% if(judgement) { %>
-    <p>正解！天才かよ！！</p>
+    <p class="text">
+      <span>正解！</span><strong>天才</strong><span>かよ！！</span><br>
+      <span>現代の</span><strong>アインシュタイン</strong><span>、、、？</span><br>
+      <span>脳みその皺が</span><strong>ラビリンス！</strong><br>
+    </p>
   <% } else { %>
-    <p>小学校からやり直そう…</p>
+    <p class="text">
+      <span>伸びしろは無限大…！</span>
+    </p>
   <% } %>
   <a href="/">やりなおす</a>
   </body>

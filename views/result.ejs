@@ -4,20 +4,62 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css'>
     <link rel='stylesheet' href='/stylesheets/textmoving.css'>
+    <script type="/javascripts/textmoving.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-  <% if(judgement) { %>
-    <p class="text">
-      <span>正解！</span><strong>天才</strong><span>かよ！！</span><br>
-      <span>現代の</span><strong>アインシュタイン</strong><span>、、、？</span><br>
-      <span>脳みその皺が</span><strong>ラビリンス！</strong><br>
-    </p>
-  <% } else { %>
-    <p class="text">
-      <span>伸びしろは無限大…！</span>
-    </p>
-  <% } %>
-  <a href="/">やりなおす</a>
+    <div class="f-container">
+      <!-- 上段の3個 -->
+      <div class="f-item f-item-left">
+        <% if(judgement) { %>
+          <p class="text">
+            <span>脳の回転</span><strong>速すぎ</strong><span>て火が出てる！</span><br>
+          </p>
+        <% } %>
+      </div>
+      <div class="f-item f-item-center">
+        <% if(judgement) { %>
+          <p class="text">
+            <span>現代の</span><strong>アインシュタイン！</strong><br>
+          </p>
+        <% } %>
+      </div>
+      <div class="f-item f-item-right">
+        <% if(judgement) { %>
+          <p class="text">
+            <span>脳みその皺が</span><strong>ラビリンス！</strong><br>
+          </p>
+        <% } %>
+      </div>
+
+      <!-- 中段の左 -->
+      <div class="f-item f-item-left">
+      </div>
+
+      <div class="f-item f-item-center">
+        <h1><%= title %></h1>
+        <% if(judgement) { %>
+          <p class="text">
+            <span>正解！</span><strong>天才</strong><span>です！！</span><br>
+          </p>
+        <% } else { %>
+          <p class="text">
+            <span>伸びしろは無限大…！</span>
+          </p>
+        <% } %>
+        <a href="/">もう一度</a>
+      </div>
+
+      <!-- 中段の右 -->
+      <div class="f-item f-item-right">
+      </div>
+
+      <!-- 下段の3個 -->
+      <div class="f-item f-item-left">
+      </div>
+      <div class="f-item f-item-center">
+      </div>
+      <div class="f-item f-item-right">
+      </div>
+    </div>
   </body>
 </html>

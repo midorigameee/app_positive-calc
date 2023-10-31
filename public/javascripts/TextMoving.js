@@ -1,8 +1,18 @@
 // https://fuuno.net/cani/auto_letter/auto_letter.html
 
-//要素を取得 ..①
-const sample = document.getElementById("sample");
+(window.onload = function() {
+    //要素を取得 ..①
+    const sample = document.getElementsByClassName("text");
 
+    if(sample.length > 0){
+        console.log("sample : " + sample.length);
+        for(i=0; i<sample.length; i++){
+            console.log("sample : " + sample[i]);
+        }
+    }
+})();
+
+/*
 //変換後のHTMLをここに配置 ..②
 let inner = "";
 
@@ -15,3 +25,4 @@ for(i=0;i<sample.innerText.length;i++) {
 
 //sampleのHTMLを変更 ..⑤
 sample.innerHTML = inner;
+*/

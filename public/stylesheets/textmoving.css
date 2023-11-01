@@ -1,3 +1,30 @@
+.sub-text{
+  display:none;
+}
+
+.each {
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 2px;
+  display:inline-block;
+  animation:each 2s linear;
+}
+
+@keyframes each {
+  0% {
+     opacity: 0;
+     transform: translateX(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+  /*
+  50% {transform:rotate(1turn);}
+  to {transform:rotate(1turn)}
+  */
+}
+
+/*
 .text{
 font-family: 'Noto Serif JP', serif;
 letter-spacing: 2px;
@@ -121,3 +148,4 @@ opacity: 1;
   filter: blur(0);
 }
 }
+*/

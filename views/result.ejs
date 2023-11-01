@@ -2,21 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <script>
-    'use strict';
-      var local = window.location;
-      var url = local.origin;
-      url + getDir(local); // 現在のディレクトリ
-      console.log("Current Dir : " + url);
-      url + getDir(local,1); // 1つ上のディレクトリ
-      console.log("One higher Dir : " + url);
-      function getDir(place, n) {
-      　　return place.pathname.replace(new RegExp("(?:\\\/+[^\\\/]*){0," + ((n || 0) + 1) + "}$"), "/");
-      }
-    </script>
     <link rel='stylesheet' href='stylesheets/style.css'>
     <link rel='stylesheet' href='stylesheets/textmoving.css'>
-    <script src="javascripts/textmoving.js"></script>
+    <script src='javascripts/add-animation-elements.js'></script>
   </head>
   <body>
     <div class="f-container">

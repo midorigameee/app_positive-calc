@@ -4,35 +4,32 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css'>
     <link rel='stylesheet' href='/stylesheets/textmoving.css'>
-    <script type="/javascripts/textmoving.js"></script>
+    <script src="/javascripts/textmoving.js"></script>
   </head>
   <body>
     <div class="f-container">
       <!-- 上段の3個 -->
       <div class="f-item f-item-left">
         <% if(judgement) { %>
-          <p class="text">
-            <span>脳の回転</span><strong>速すぎ</strong><span>て火が出てる！</span><br>
-          </p>
+          <p class="sabu-word">脳の回転速すぎて火が出てる！</p>
         <% } %>
       </div>
       <div class="f-item f-item-center">
         <% if(judgement) { %>
-          <p class="text">
-            <span>現代の</span><strong>アインシュタイン！</strong><br>
-          </p>
+          <p class="sabu-word">現代のアインシュタイン！</p>
         <% } %>
       </div>
       <div class="f-item f-item-right">
         <% if(judgement) { %>
-          <p class="text">
-            <span>脳みその皺が</span><strong>ラビリンス！</strong><br>
-          </p>
+          <p class="sabu-word">脳みその皺がラビリンス！</p>
         <% } %>
       </div>
 
       <!-- 中段の左 -->
       <div class="f-item f-item-left">
+        <% if(judgement) { %>
+          <p class="sabu-word">ベガバンクもびっくり！</p>
+        <% } %>
       </div>
 
       <div class="f-item f-item-center">
@@ -51,14 +48,26 @@
 
       <!-- 中段の右 -->
       <div class="f-item f-item-right">
+        <% if(judgement) { %>
+          <p class="sabu-word">人間国宝！ルーブル美術館に展示したい！</p>
+        <% } %>
       </div>
 
       <!-- 下段の3個 -->
       <div class="f-item f-item-left">
+        <% if(judgement) { %>
+          <p class="sabu-word">脳みそ詰まりすぎ、密です！</p>
+        <% } %>
       </div>
       <div class="f-item f-item-center">
+        <% if(judgement) { %>
+          <p class="sabu-word">脳みそは密でいいんだよ！</p>
+        <% } %>
       </div>
       <div class="f-item f-item-right">
+        <% if(judgement) { %>
+          <p class="sabu-word">羂索に見せつけてやれ！！</p>
+        <% } %>
       </div>
     </div>
   </body>

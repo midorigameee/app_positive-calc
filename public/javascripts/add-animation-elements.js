@@ -28,7 +28,7 @@
         // 1文字ずつクラスを付与する
         for(let child_num=0;child_num<elem.children.length;child_num++){
             elem.children[child_num].classList.add("each");
-            elem.children[child_num].style.animationDelay = `${whole_animation_times*0.2}s`
+            elem.children[child_num].style.animationDelay = `${whole_animation_times*0.1}s`
 
             whole_animation_times++;
         }

@@ -25,14 +25,16 @@
       <div class="f-item f-item-center">
         <h1><%= title %></h1>
         <p>Let's enjoy calcuration!!</p>
-        <p><%= num1 %> + <%= num2 %> = ?</p>
+        <div id="calc-contents">
+          <p><%= num1 %> + <%= num2 %> = ?</p>
+        </div>
         <form action="result" method="POST">
           <p>Result : 
-            <input type="number" name="result">
+            <input id="result-input" type="number" name="result" size="12">
           </p>
           <input type="hidden" name="num1" value=<%= num1 %>>
           <input type="hidden" name="num2" value=<%= num2 %>>
-          <input type="submit" vlue="Submit">
+          <input type="submit" value="Submit">
         </form>
       </div>
 

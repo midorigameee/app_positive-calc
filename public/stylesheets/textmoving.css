@@ -1,5 +1,5 @@
 .sub-text{
-  display:none;
+  margin: auto;
 }
 
 .each {
@@ -7,21 +7,20 @@
   letter-spacing: 2px;
   display:inline-block;
   animation:each 2s linear;
+  text-align:center
+
+  margin: auto;
 }
 
 @keyframes each {
   0% {
-     opacity: 0;
-     transform: translateX(20px);
+   opacity: 0;
+   transform: translateX(20px);
   }
   100% {
-     opacity: 1;
-     transform: translateX(0);
+   opacity: 1;
+   transform: translateX(0);
   }
-  /*
-  50% {transform:rotate(1turn);}
-  to {transform:rotate(1turn)}
-  */
 }
 
 /*

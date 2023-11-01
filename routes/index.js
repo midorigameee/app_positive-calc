@@ -23,14 +23,17 @@ router.post('/result', function(req, res, next) {
   var num1 = Number(req.body.num1);
   var num2 = Number(req.body.num2);
   var result = Number(req.body.result);
+  var result_message = "Oh...";
 
   var judgement = false;
   if((num1+num2) == result){
     judgement = true;
+    result_message = "Congratulations!!"
   }
 
   res.render('result', {
     title: 'Result',
+    result_message: result_message,
     judgement: judgement
   });
 });

@@ -1,44 +1,56 @@
 <%-include("header") %>
 <body>
-  <div class="f-container">
+  <div class="container text-center">
     <!-- 上段の3個 -->
-    <div class="f-item f-item-left">
-    </div>
-    <div class="f-item f-item-center">
-    </div>
-    <div class="f-item f-item-right">
-    </div>
-
-    <!-- 中段の左 -->
-    <div class="f-item f-item-left">
-    </div>
-
-    <div class="f-item f-item-center">
-      <h1><%= title %></h1>
-      <p>Let's enjoy calcuration!!</p>
-      <div id="calc-contents">
-        <p><%= num1 %> + <%= num2 %> = ?</p>
+    <div class="row">
+      <div class="col-4 item">
       </div>
-      <form action="result" method="POST">
-        <p>Result : 
-          <input id="result-input" type="number" name="result" size="12">
-        </p>
-        <input type="hidden" name="num1" value=<%= num1 %>>
-        <input type="hidden" name="num2" value=<%= num2 %>>
-        <input type="submit" value="Submit">
-      </form>
+      <div class="col-4 item">
+      </div>
+      <div class="col-4 item">
+      </div>
     </div>
 
-    <!-- 中段の右 -->
-    <div class="f-item f-item-right">
+    <div class="row">
+      <!-- 中段の左 -->
+      <div class="col-4 item">
+      </div>
+
+      <div class="col-4 item">
+        <h1><%= title %></h1>
+        <p>Let's enjoy calcuration!!</p>
+        <div id="calc-contents">
+          <p><%= num1 %> + <%= num2 %> = ?</p>
+        </div>
+
+        <form action="result" method="POST">
+          <div class="row">
+            <div class="col">
+              <label for="result" class="col-form-label">Result : </label>
+            </div>
+            <div class="col">
+              <input type="number" name="result" class="form-control">
+            </div>
+          </div>
+          <input type="hidden" name="num1" value=<%= num1 %>>
+          <input type="hidden" name="num2" value=<%= num2 %>>
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+      </div>
+
+      <!-- 中段の右 -->
+      <div class="col-4 item">
+      </div>
     </div>
 
     <!-- 下段の3個 -->
-    <div class="f-item f-item-left">
-    </div>
-    <div class="f-item f-item-center">
-    </div>
-    <div class="f-item f-item-right">
+    <div class="row">
+      <div class="col-4 item">
+      </div>
+      <div class="col-4 item">
+      </div>
+      <div class="col-4 item">
+      </div>
     </div>
   </div>
 </body>

@@ -1,74 +1,67 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='stylesheets/style.css'>
-    <link rel='stylesheet' href='stylesheets/textmoving.css'>
-    <script src='javascripts/add-animation-elements.js'></script>
-  </head>
-  <body>
-    <div class="f-container">
-      <!-- 上段の3個 -->
-      <div class="f-item f-item-left">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳の回転速すぎて火が出る！</p>
-        <% } %>
-      </div>
-      <div class="f-item f-item-center">
-        <% if(judgement) { %>
-          <p class="sabu-word">アインシュタインの生まれ変わり！</p>
-        <% } %>
-      </div>
-      <div class="f-item f-item-right">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みその皺がラビリンス！</p>
-        <% } %>
-      </div>
-
-      <!-- 中段の左 -->
-      <div class="f-item f-item-left">
-        <% if(judgement) { %>
-          <p class="sabu-word">ベガバンクもびっくり！</p>
-        <% } %>
-      </div>
-
-      <div class="f-item f-item-center">
-        <h1><%= result_message %></h1>
-        <% if(judgement) { %>
-          <p class="message">
-            <span>正解！天才です！！</span>
-          </p>
-        <% } else { %>
-          <p class="message">
-            <span>伸びしろは無限大…！</span>
-          </p>
-        <% } %>
-        <a href="/">もう一度</a>
-      </div>
-
-      <!-- 中段の右 -->
-      <div class="f-item f-item-right">
-        <% if(judgement) { %>
-          <p class="sabu-word">人間国宝！ルーブル美術館に展示したい！</p>
-        <% } %>
-      </div>
-
-      <!-- 下段の3個 -->
-      <div class="f-item f-item-left">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みそ詰まりすぎ、密です！</p>
-        <% } %>
-      </div>
-      <div class="f-item f-item-center">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みそは密でいいんだよ！</p>
-        <% } %>
-      </div>
-      <div class="f-item f-item-right">
-        <% if(judgement) { %>
-          <p class="sabu-word">羂索「キッショ、なんで分かるんだよ」</p>
-        <% } %>
-      </div>
+<%-include("header") %>
+<body>
+  <div class="f-container">
+    <!-- 上段の3個 -->
+    <div class="f-item f-item-left">
+      <% if(judgement) { %>
+        <p class="sabu-word">脳の回転速すぎて火が出る！</p>
+      <% } %>
     </div>
-  </body>
-</html>
+    <div class="f-item f-item-center">
+      <% if(judgement) { %>
+        <p class="sabu-word">アインシュタインの生まれ変わり！</p>
+      <% } %>
+    </div>
+    <div class="f-item f-item-right">
+      <% if(judgement) { %>
+        <p class="sabu-word">脳みその皺がラビリンス！</p>
+      <% } %>
+    </div>
+
+    <!-- 中段の左 -->
+    <div class="f-item f-item-left">
+      <% if(judgement) { %>
+        <p class="sabu-word">ベガバンクもびっくり！</p>
+      <% } %>
+    </div>
+
+    <div class="f-item f-item-center">
+      <h1><%= result_message %></h1>
+      <% if(judgement) { %>
+        <p class="message">
+          <span>正解！天才です！！</span>
+        </p>
+      <% } else { %>
+        <p class="message">
+          <span>伸びしろは無限大…！</span>
+        </p>
+      <% } %>
+      <a href="/">もう一度</a>
+    </div>
+
+    <!-- 中段の右 -->
+    <div class="f-item f-item-right">
+      <% if(judgement) { %>
+        <p class="sabu-word">人間国宝！ルーブル美術館に展示したい！</p>
+      <% } %>
+    </div>
+
+    <!-- 下段の3個 -->
+    <div class="f-item f-item-left">
+      <% if(judgement) { %>
+        <p class="sabu-word">脳みそ詰まりすぎ、密です！</p>
+      <% } %>
+    </div>
+    <div class="f-item f-item-center">
+      <% if(judgement) { %>
+        <p class="sabu-word">脳みそは密でいいんだよ！</p>
+      <% } %>
+    </div>
+    <div class="f-item f-item-right">
+      <% if(judgement) { %>
+        <p class="sabu-word">羂索「キッショ、なんで分かるんだよ」</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+<%-include("footer") %>

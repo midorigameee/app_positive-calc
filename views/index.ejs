@@ -1,54 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <html lang=”ja”>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='/stylesheets/style.css'>
-    <link rel='stylesheet' href='/stylesheets/textmoving.css'>
-    <title><%= title %></title>
-  </head>
-  <body>
-    <div class="f-container">
-      <!-- 上段の3個 -->
-      <div class="f-item f-item-left">
-      </div>
-      <div class="f-item f-item-center">
-      </div>
-      <div class="f-item f-item-right">
-      </div>
-
-      <!-- 中段の左 -->
-      <div class="f-item f-item-left">
-      </div>
-
-      <div class="f-item f-item-center">
-        <h1><%= title %></h1>
-        <p>Let's enjoy calcuration!!</p>
-        <div id="calc-contents">
-          <p><%= num1 %> + <%= num2 %> = ?</p>
-        </div>
-        <form action="result" method="POST">
-          <p>Result : 
-            <input id="result-input" type="number" name="result" size="12">
-          </p>
-          <input type="hidden" name="num1" value=<%= num1 %>>
-          <input type="hidden" name="num2" value=<%= num2 %>>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-
-      <!-- 中段の右 -->
-      <div class="f-item f-item-right">
-      </div>
-
-      <!-- 下段の3個 -->
-      <div class="f-item f-item-left">
-      </div>
-      <div class="f-item f-item-center">
-      </div>
-      <div class="f-item f-item-right">
-      </div>
+<%-include("header") %>
+<body>
+  <div class="f-container">
+    <!-- 上段の3個 -->
+    <div class="f-item f-item-left">
     </div>
-  </body>
-</html>
+    <div class="f-item f-item-center">
+    </div>
+    <div class="f-item f-item-right">
+    </div>
+
+    <!-- 中段の左 -->
+    <div class="f-item f-item-left">
+    </div>
+
+    <div class="f-item f-item-center">
+      <h1><%= title %></h1>
+      <p>Let's enjoy calcuration!!</p>
+      <div id="calc-contents">
+        <p><%= num1 %> + <%= num2 %> = ?</p>
+      </div>
+      <form action="result" method="POST">
+        <p>Result : 
+          <input id="result-input" type="number" name="result" size="12">
+        </p>
+        <input type="hidden" name="num1" value=<%= num1 %>>
+        <input type="hidden" name="num2" value=<%= num2 %>>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- 中段の右 -->
+    <div class="f-item f-item-right">
+    </div>
+
+    <!-- 下段の3個 -->
+    <div class="f-item f-item-left">
+    </div>
+    <div class="f-item f-item-center">
+    </div>
+    <div class="f-item f-item-right">
+    </div>
+  </div>
+</body>
+<%-include("footer") %>

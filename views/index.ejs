@@ -17,25 +17,30 @@
       </div>
 
       <div class="col-4 item">
-        <h1><%= title %></h1>
-        <p>Let's enjoy calcuration!!</p>
-        <div id="calc-contents">
-          <p><%= num1 %> + <%= num2 %> = ?</p>
-        </div>
-
-        <form action="result" method="POST">
-          <div class="row">
-            <div class="col">
+        <div class="row">
+          <div class="col-12">
+            <h1><%= title %></h1>
+          </div>
+          <div class="col-12">
+            <p>Let's enjoy calcuration!!</p>
+          </div>
+          <div class="col-12" id="calc-contents">
+            <p><%= num1 %> + <%= num2 %> = ?</p>
+          </div>
+          <form action="result" method="POST" class="row">
+            <div class="col-3 offset-3">
               <label for="result" class="col-form-label">Result : </label>
             </div>
-            <div class="col">
+            <div class="col-3">
               <input type="number" name="result" class="form-control">
             </div>
-          </div>
-          <input type="hidden" name="num1" value=<%= num1 %>>
-          <input type="hidden" name="num2" value=<%= num2 %>>
-          <input type="submit" value="Submit" class="btn btn-primary">
-        </form>
+            <input type="hidden" name="num1" value=<%= num1 %>>
+            <input type="hidden" name="num2" value=<%= num2 %>>
+            <div class="col-12 mt-1">
+              <input type="submit" value="Submit" class="btn btn-primary btn-sm">
+            </div>
+          </form>
+        </div>
       </div>
 
       <!-- 中段の右 -->

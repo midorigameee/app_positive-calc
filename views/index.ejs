@@ -2,7 +2,7 @@
 <body>
   <div class="container text-center">
     <!-- 上段の3個 -->
-    <div class="row">
+    <div class="row d-none d-sm-block">
       <div class="col-4 item">
       </div>
       <div class="col-4 item">
@@ -13,10 +13,10 @@
 
     <div class="row">
       <!-- 中段の左 -->
-      <div class="col-4 item">
+      <div class="col-4 item d-none d-sm-block">
       </div>
 
-      <div class="col-4 item">
+      <div class="col-12 col-sm-4 item">
         <div class="row">
           <div class="col-12">
             <h1><%= title %></h1>
@@ -27,29 +27,31 @@
           <div class="col-12" id="calc-contents">
             <p><%= num1 %> + <%= num2 %> = ?</p>
           </div>
-          <form action="result" method="POST" class="row">
-            <div class="col-3 offset-3">
-              <label for="result" class="col-form-label">Result : </label>
-            </div>
-            <div class="col-3">
-              <input type="number" name="result" class="form-control">
-            </div>
-            <input type="hidden" name="num1" value=<%= num1 %>>
-            <input type="hidden" name="num2" value=<%= num2 %>>
-            <div class="col-12 mt-1">
-              <input type="submit" value="Submit" class="btn btn-primary btn-sm">
-            </div>
-          </form>
+          <div class="col-12">
+            <form action="result" method="POST" class="row">
+              <div class="col-3 offset-3">
+                <label for="result" class="col-form-label">Result : </label>
+              </div>
+              <div class="col-3">
+                <input type="number" name="result" class="form-control">
+              </div>
+              <input type="hidden" name="num1" value=<%= num1 %>>
+              <input type="hidden" name="num2" value=<%= num2 %>>
+              <div class="col-12 mt-1">
+                <input type="submit" value="Submit" class="btn btn-primary btn-sm">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
       <!-- 中段の右 -->
-      <div class="col-4 item">
+      <div class="col-4 item d-none d-sm-block">
       </div>
     </div>
 
     <!-- 下段の3個 -->
-    <div class="row">
+    <div class="row d-none d-sm-block">
       <div class="col-4 item">
       </div>
       <div class="col-4 item">

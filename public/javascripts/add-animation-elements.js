@@ -1,7 +1,7 @@
 // https://fuuno.net/cani/auto_letter/auto_letter.html
 
 (window.onload = function() {
-    //要素を取得 ..①
+    //要素を取得
     const word_elem_list = document.getElementsByClassName("sabu-word");
 
     if(word_elem_list.length <= 0){

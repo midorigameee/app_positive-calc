@@ -2,7 +2,7 @@
 <body>
   <div class="container text-center">
     <!-- 上段の3個 -->
-    <div class="row">
+    <div class="row d-none d-sm-flex">
       <div class="col-4 item">
         <% if(judgement) { %>
           <p class="sabu-word">脳の回転速すぎて火が出る！</p>
@@ -22,13 +22,13 @@
 
     <div class="row">
       <!-- 中段の左 -->
-      <div class="col-4 item">
+      <div class="col-4 item d-none d-sm-flex">
         <% if(judgement) { %>
           <p class="sabu-word">ベガバンクもびっくり！</p>
         <% } %>
       </div>
 
-      <div class="col-4">
+      <div class="col-12 col-sm-4 item">
         <div class="row">
           <div class="col-12">
             <h1><%= result_message %></h1>
@@ -51,7 +51,7 @@
       </div>
 
       <!-- 中段の右 -->
-      <div class="col-4 item">
+      <div class="col-4 item d-none d-sm-flex">
         <% if(judgement) { %>
           <p class="sabu-word">人間国宝！ルーブル美術館に展示したい！</p>
         <% } %>
@@ -59,7 +59,7 @@
     </div>
 
     <!-- 下段の3個 -->
-    <div class="row">
+    <div class="row d-none d-sm-flex">
       <div class="col-4 item">
         <% if(judgement) { %>
           <p class="sabu-word">脳みそ詰まりすぎ、密です！</p>

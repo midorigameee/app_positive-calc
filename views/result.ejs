@@ -4,28 +4,20 @@
     <!-- 上段の3個 -->
     <div class="row d-none d-sm-flex">
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳の回転速すぎて火が出る！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[0] %></p>
       </div>
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">アインシュタインの生まれ変わり！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[1] %></p>
       </div>
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みその皺がラビリンス！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[2] %></p>
       </div>
     </div>
 
     <div class="row">
       <!-- 中段の左 -->
       <div class="col-4 item d-none d-sm-flex">
-        <% if(judgement) { %>
-          <p class="sabu-word">ベガバンクもびっくり！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[3] %></p>
       </div>
 
       <div class="col-12 col-sm-4 item">
@@ -34,15 +26,7 @@
             <h1><%= result_message %></h1>
           </div>
           <div class="col-12">
-            <% if(judgement) { %>
-              <p class="message">
-                <span>正解！天才です！！</span>
-              </p>
-            <% } else { %>
-              <p class="message">
-                <span>伸びしろは無限大…！</span>
-              </p>
-            <% } %>
+            <p class="message"><%=result_text %></p>
           </div>
           <div class="col-12">
             <a href="/">もう一度</a>
@@ -52,28 +36,20 @@
 
       <!-- 中段の右 -->
       <div class="col-4 item d-none d-sm-flex">
-        <% if(judgement) { %>
-          <p class="sabu-word">人間国宝！ルーブル美術館に展示したい！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[4] %></p>
       </div>
     </div>
 
     <!-- 下段の3個 -->
     <div class="row d-none d-sm-flex">
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みそ詰まりすぎ、密です！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[5] %></p>
       </div>
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">脳みそは密でいいんだよ！</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[6] %></p>
       </div>
       <div class="col-4 item">
-        <% if(judgement) { %>
-          <p class="sabu-word">羂索「キッショ、なんで分かるんだよ」</p>
-        <% } %>
+        <p class="sabu-word"><%=result_words[7] %></p>
       </div>
     </div>
 
